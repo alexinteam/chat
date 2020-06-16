@@ -1,3 +1,7 @@
+VENDOR
+============
+`go mod vendor`
+
 START DB
 ============
 
@@ -10,14 +14,14 @@ RUN MIGRATIONS
  
 BULD APP
 ============
-go build -o chatserv
+`go build -o chatserv`
 
 RUN APP
 ===============
 
-`run`   ./chatserv
+run   `./chatserv`
 
-`navigate`   http://localhost:8080/
+navigate   `http://localhost:8080/`
 
 `USERS LIST`
  
