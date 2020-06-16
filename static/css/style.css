@@ -1,0 +1,111 @@
+/* Main block */
+.page {
+    padding: 100px;
+}
+
+.page .tab-content {
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.error {
+    color: #a94442;
+}
+
+/* Top navbar */
+.navbar-nav .logout {
+    padding: 13px;
+}
+
+.navbar-nav .logout:hover {
+    text-decoration: none;
+}
+
+/* #board and control buttons */
+#board {
+    float: left;
+    margin-right: 20px;
+    width: 600px;
+    height: 300px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    line-height: 0.9;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-message .input-group {
+    width: 496px;
+}
+
+.recipient {
+    cursor: pointer;
+}
+
+button[name="send"] {
+    width: 100px;
+    margin-right: 16px;
+}
+
+button[name="mute"],
+button[name="kick"],
+button[name="ban"] {
+    width: 40px;
+    font-size: 20px;
+    line-height: 14px;
+    padding-left: 10px;
+}
+
+/* List of all users */
+select[name="users"] {
+    width: 200px;
+    height: 300px;
+}
+
+select[name="users"] .admin,
+select[name="users"] .moder {
+    color: #3c763d;
+}
+
+select[name="users"] .muted {
+    text-decoration: line-through;
+}
+
+/* Message board */
+.msg-self,
+.msg-date,
+.msg-sender,
+.msg-delim,
+.msg-recipient {
+    color: #999;
+}
+
+.msg-self {
+    font-weight: bold;
+}
+
+.msg-sender,
+.msg-recipient {
+    cursor: pointer;
+}
+
+.msg-admin,
+.msg-moder {
+    color: #3c763d !important;
+}
+
+.msg-text {
+    color: #666;
+}
+
+.msg-error {
+    color: #a94442;
+}
+
+.msg-info {
+    color: #31708f;
+}

@@ -1,0 +1,45 @@
+{{define "head"}}
+<title>Chat: {{.Room.Name}}</title>
+{{end}}
+
+{{define "content"}}
+<div class="page col-md-12">
+
+    <h1>Chat: {{.Room.Name}}</h1>
+
+    <div class="row">
+        <div id="board"></div>
+    </div>
+
+    <div class="row">
+        <form class="form-inline form-message" action="">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon recipient">@</span>
+                    <input name="message" type="text" class="form-control">
+                </div>
+                <button name="send" class="btn btn-default">Send</button>
+                <button name="exit" class="btn btn-default" title="Exit">
+                    <i class="glyphicon glyphicon-log-out"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{{end}}
+
+{{define "scripts"}}
+<script type="text/javascript">
+    // Logged in user
+    var currentUser = {
+        id: {{.User.Id}},
+        username: {{.User.Username}},
+        fullname: {{.User.Fullname}},
+        email: {{.User.Email}}
+    };
+    var currentRoom = {
+        id: {{.Room.Id}}
+    }
+</script>
+<script type="text/javascript" src="/static/js/chat.js"></script>
+{{end}}

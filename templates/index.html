@@ -1,0 +1,15 @@
+{{define "head"}}
+<title>Chat: Rooms list</title>
+{{end}}
+
+{{define "content"}}
+<div class="page col-md-12">
+    {{range $room := .Rooms}}
+        <h1>
+            <a href="/chat/rooms/{{$room.Id}}">{{$room.Name}}</a>
+        </h1>
+    {{end}}
+</div>
+{{end}}
+
+{{define "scripts"}}{{end}}
